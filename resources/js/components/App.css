@@ -1,0 +1,156 @@
+h1 {
+  margin: 20px;
+}
+
+* {
+  text-align: center;
+  font-family: consolas;
+  margin: 10px;
+}
+
+body {
+  background-color: rgb(107, 44, 31);
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+button,
+input,
+textarea,
+.note {
+  background-color: rgb(78, 27, 17);
+  border-style: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-weight: bold; 
+}
+
+input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+textarea {
+  color: rgb(184, 120, 109);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(62, 18, 9);
+}
+button:active {
+  background-color: rgb(40, 9, 3);
+}
+
+::placeholder {
+  color: rgb(98, 53, 43);
+}
+
+.note-list-type {
+  margin-top: 5vh;
+}
+
+.note {
+  margin: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.note-button {
+  background-color: rgb(82, 40, 31);
+  font-size: small;
+  border-radius: 10px;
+}
+
+.note-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.note-content {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(184, 120, 109);
+  padding: 20px;
+  overflow-y: auto;
+  height: 10vh;
+}
+
+.add-note-section {
+  margin-top: 5vh;
+}
+
+.add-note-warning {
+  margin: 3vh;
+  font-style: italic;
+  color: #b87251;
+}
+
+.content-tabs {
+  display: block;
+  width: 100%;
+  height: 15vh;
+  background-color: #b87251;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.tab.active-tab {
+  background-color: #673f2d;
+}
+
+.tab {
+  height: 100%;
+  background-color: #b87251;
+  margin: 0;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border: none;
+  border-radius: 0px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-bottom: white 5px solid;
+}
+
+/* Footer always at the bottom */
+.body-content {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex-grow: 1;
+}
+footer {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 5vh auto;
+}
+/* --------------------------- */
+
+@media (max-width: 600px) {
+  .note {
+      width: 80vw;
+  }
+}
